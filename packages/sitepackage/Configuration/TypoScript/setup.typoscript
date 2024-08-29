@@ -20,6 +20,18 @@ page {
 
     10 = FLUIDTEMPLATE
     10 {
+       # file.stdWrap.cObject = CASE
+        #file.stdWrap.cObject {
+         #   key.data = pageLayout
+          #  pagets__default = TEXT
+          #  pagets__default.value = EXT:sitepackage/Resources/Private/Templates/Testkey.html
+
+             #pagets__2colsidebar= TEXT
+            #pagets__2colsidebar.value = EXT:sitepackage/Resources/Private/Partials/Page/2colsidebar.html
+
+#            default < .pagets__default
+       # }
+
         # Template names will be generated automatically by converting the applied
         # backend_layout, there is no explicit mapping necessary anymore.
         #
@@ -51,6 +63,7 @@ page {
             0 = EXT:sitepackage/Resources/Private/Templates/Page/
             1 = {$page.fluidtemplate.templateRootPath}
         }
+       
         partialRootPaths {
             0 = EXT:sitepackage/Resources/Private/Partials/Page/
             1 = {$page.fluidtemplate.partialRootPath}
@@ -145,6 +158,7 @@ page {
 
     includeCSS {
         sitepackage_layout = EXT:sitepackage/Resources/Public/Css/layout.min.css
+        mainLayout = EXT:sitepackage/Resources/Public/Css/main.css
     }
 
     includeJSLibs {
@@ -161,6 +175,11 @@ page {
 
     includeJSFooter {
         sitepackage_scripts = EXT:sitepackage/Resources/Public/JavaScript/Dist/scripts.js
+        breakpoints = EXT:sitepackage/Resources/Public/JavaScript/breakpoints.js
+        browserMinJs = EXT:sitepackage/Resources/Public/JavaScript/browser.min.js
+        jquery = EXT:sitepackage/Resources/Public/JavaScript/jquery.js
+        main = EXT:sitepackage/Resources/Public/JavaScript/main.js
+        util = EXT:sitepackage/Resources/Public/JavaScript/util.js
     }
 }
 

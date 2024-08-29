@@ -22,6 +22,7 @@ styles {
 page {
      fluidtemplate {
         layoutRootPath = EXT:sitepackage/Resources/Private/Layouts/Page/
+        
         partialRootPath = EXT:sitepackage/Resources/Private/Partials/Page/
         templateRootPath = EXT:sitepackage/Resources/Private/Templates/Page/
     }
