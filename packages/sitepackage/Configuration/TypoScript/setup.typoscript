@@ -175,11 +175,11 @@ page {
 
     includeJSFooter {
         sitepackage_scripts = EXT:sitepackage/Resources/Public/JavaScript/Dist/scripts.js
-        breakpoints = EXT:sitepackage/Resources/Public/JavaScript/breakpoints.js
-        browserMinJs = EXT:sitepackage/Resources/Public/JavaScript/browser.min.js
-        jquery = EXT:sitepackage/Resources/Public/JavaScript/jquery.js
-        main = EXT:sitepackage/Resources/Public/JavaScript/main.js
-        util = EXT:sitepackage/Resources/Public/JavaScript/util.js
+        breakpoints = EXT:sitepackage/Resources/Public/JavaScript/Dist/breakpoints.min.js
+        util = EXT:sitepackage/Resources/Public/JavaScript/Dist/util.js
+        main = EXT:sitepackage/Resources/Public/JavaScript/Dist/main.js
+        browser = EXT:sitepackage/Resources/Public/JavaScript/Dist/browser.min.js
+        jquery = EXT:sitepackage/Resources/Public/JavaScript/Dist/jquery.min.js
     }
 }
 
