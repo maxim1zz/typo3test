@@ -1,0 +1,20 @@
+TCEFORM {
+    tt_content {
+        header_layout {
+            altLabels {
+                1 = Seitenüberschrift
+                2 = Themenüberschrift
+            }
+        }
+        frame_class {
+            addItems {
+                border_bottom = Überschrift underlined
+            }
+        }
+        table_class {
+            addItems {
+                alt = Alternativ
+            }
+        }
+    }
+}
