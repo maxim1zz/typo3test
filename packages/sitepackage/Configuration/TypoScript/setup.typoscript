@@ -15,6 +15,7 @@
 ##############
 page = PAGE
 page {
+    
     typeNum = 0
     shortcutIcon = EXT:sitepackage/Resources/Public/Icons/favicon.ico
 
