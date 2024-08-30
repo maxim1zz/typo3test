@@ -55,3 +55,15 @@ config {
     headerComment = build by sitepackagebuilder.com
     sendCacheHeaders = 1
 }
+
+
+sitepackage {
+     # cat = sitepackage/links; type = int+; label = RootPage ID:ID der Startseite der Website
+    rootPageId = 1
+    socialmedia.twitter = blank
+    socialmedia.facebook = ?!
+    socialmedia.instagram = maxim._zzz
+    socialmedia.github = maxim1zz
+    
+
+}

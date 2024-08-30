@@ -14,5 +14,13 @@ call_user_func(function()
         $extensionKey,
         'Configuration/TsConfig/Page/All.tsconfig',
         'Sitepackage'
+        
     );
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+        $extensionKey,
+        'Configuration/TsConfig/Page/Mod/WebLayout/Page_general.tsconfig',
+        'anders'
+        
+    );
+ 
 });

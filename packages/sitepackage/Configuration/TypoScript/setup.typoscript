@@ -83,7 +83,31 @@ page {
                     expandAll = 1
                     levels = 2
             }
+            30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            30 {
+                    as = metaNav
+                    special = directory
+                    special.value = 6
+                    levels = 1
+                    titleField = nav_title // title
+            }
+            40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            40 {
+                    as = rootline
+                    special = rootline
+                    special.range = 0|-1
+                    titleField = nav_title // title
+                    includeNotInMenu = 1
+                }
+            
         }
+        settings {
+            rootPageId = {$sitepackage.rootPageId} 
+                socialmedia.twitter = {$sitepackage.socialmedia.twitter}
+                socialmedia.facebook = {$sitepackage.socialmedia.facebook}
+                socialmedia.instagram = {$sitepackage.socialmedia.instagram}
+                socialmedia.github = {$sitepackage.socialmedia.github}
+            }
     }
 
     meta {
@@ -159,6 +183,7 @@ page {
     includeCSS {
         sitepackage_layout = EXT:sitepackage/Resources/Public/Css/layout.min.css
         mainLayout = EXT:sitepackage/Resources/Public/Css/main.css
+        custom = EXT:sitepackage/Resources/Public/Css/custom.css
     }
 
     includeJSLibs {
@@ -181,6 +206,8 @@ page {
         util = EXT:sitepackage/Resources/Public/JavaScript/Dist/util.js
         main = EXT:sitepackage/Resources/Public/JavaScript/Dist/main.js
     }
+
+
 }
 
 
@@ -219,5 +246,23 @@ config {
     compressCss = 0
     concatenateJs = 0
     concatenateCss = 0
+}
+
+sitepackage {
+    rootPageId= 1
+    logoText = Mein Firmenname
+    logoFile = EXT:sidepackge/Resources/Public/Images/Download.jpeg
+}
+
+lib.copyright = COA
+lib.copyright {
+    10 = TEXT
+    10.value = &copy;&nbsp;
+
+    20 = TEXT
+    20.data = date: Y 
+
+    30 = TEXT
+    30.value = &nbsp;Meine Firma
 }
 
