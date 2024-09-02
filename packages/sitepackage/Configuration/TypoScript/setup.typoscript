@@ -108,6 +108,7 @@ page {
                 socialmedia.facebook = {$sitepackage.socialmedia.facebook}
                 socialmedia.instagram = {$sitepackage.socialmedia.instagram}
                 socialmedia.github = {$sitepackage.socialmedia.github}
+                searchTargetPid = {$sitepackage.searchTargetPid}
             }
     }
 
@@ -250,6 +251,7 @@ config {
 }
 
 sitepackage {
+    searchTargetPid = 12
     rootPageId= 1
     logoText = Mein Firmenname
     logoFile = EXT:sidepackge/Resources/Public/Images/Download.jpeg
@@ -267,3 +269,16 @@ lib.copyright {
     30.value = &nbsp;Meine Firma
 }
 
+plugin.tx_indexedsearch {
+    settings {
+        targetPid = {searchTargetPid}
+        roorPidList
+    }
+}
+
+lib.searchField = RECORDS
+lib.searchField {
+    tables = tt_content
+    source = 21
+    dontCheckPid = 1
+}
