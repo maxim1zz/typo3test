@@ -67,7 +67,7 @@ mod.web_layout.BackendLayouts {
   1side {
     title = 1side1
     icon = content-container-columns-2
-    config {
+config {
       backend_layout {
         colCount = 2
         rowCount = 2

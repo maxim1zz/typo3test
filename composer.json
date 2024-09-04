@@ -37,7 +37,9 @@
     "typo3/cms-webhooks": "^12.4",
     "typo3/cms-workspaces": "^12.4",
     "typo3/minimal": "^12",
-    "web-vision/sitepackage": "@dev"
+    "web-vision/sitepackage": "@dev",
+    "evoweb/sf-register": "^12.0",
+    "helhum/typo3-console": "^8.1"
   },
   "repositories": {
     "composer": {
