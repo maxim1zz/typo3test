@@ -270,9 +270,13 @@ lib.copyright {
 }
 
 plugin.tx_indexedsearch {
+    view {
+        partialRootPaths.100 = EXT:sitepackage/Resources/Private/Partials/Page/
+    }
+
     settings {
-        targetPid = {searchTargetPid}
-        roorPidList
+        targetPid = 12
+        rootPidList = 1
     }
 }
 
