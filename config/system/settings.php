@@ -95,11 +95,14 @@ return [
         ],
     ],
     'MAIL' => [
-        'transport' => 'sendmail',
-        'transport_sendmail_command' => '/usr/local/bin/mailhog sendmail test@example.org --smtp-addr 127.0.0.1:1025',
-        'transport_smtp_encrypt' => '',
+        'defaultMailFromAddress' => 'projektsenden@gmail.com',
+        'defaultMailFromName' => 'Maxim',
+        'transport' => 'smtp',
+        'transport_sendmail_command' => '',
+        'transport_smtp_domain' => '',
+        'transport_smtp_encrypt' => false,
         'transport_smtp_password' => '',
-        'transport_smtp_server' => '',
+        'transport_smtp_server' => 'localhost:1025',
         'transport_smtp_username' => '',
     ],
     'SYS' => [

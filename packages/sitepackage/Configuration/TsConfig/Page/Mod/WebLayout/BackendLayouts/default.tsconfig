@@ -59,4 +59,39 @@ mod.web_layout.BackendLayouts {
       }
     }
   }
+
+}
+
+
+mod.web_layout.BackendLayouts {
+  1side {
+    title = 1side1
+    icon = content-container-columns-2
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Sidebar
+                rowspan = 2
+                colPos = 1
+              }
+              2 {
+                name = Main
+                rowspan = 2
+                colPos = 0
+              }
+            }
+          }
+          2 {
+            columns {
+            }
+          }
+        }
+      }
+    }
+  }
 }
